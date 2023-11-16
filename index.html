@@ -15,8 +15,136 @@
 
     <title>Jewelery - Front-end Project</title>
   </head>
-  <body>
-    <div class="container p-4 text-red-500"></div>
+  <body class="bg-[#f8f3e9]">
+    <div class="container mx-auto px-[1rem] md:px-[6rem] py-[2rem]">
+      <!-- Navbar -->
+      <nav class="flex items-center justify-between">
+        <div class="logo py-auto">
+          <h1 class="font-[600] text-[1.5rem]">Logo</h1>
+        </div>
+        <div class="bar block md:hidden">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1rem"
+              viewBox="0 0 512 512"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              /></svg
+          ></a>
+        </div>
+        <ul
+          class="navbar-links hidden md:flex items-center justify-between space-x-10"
+        >
+          <li class="navbar-link"><a href="#">Products</a></li>
+          <li class="navbar-link"><a href="#">About</a></li>
+          <li class="navbar-link"><a href="#">Contact</a></li>
+          <li class="navbar-link"><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+      <!-- /Navbar -->
+
+      <!-- Products -->
+      <div class="products my-[5vh] lg:my-[15vh]">
+        <div
+          class="product flex flex-col lg:flex-row items-center justify-between"
+        >
+          <div class="image w-[80%] mx-[5%]">
+            <img
+              class="bg-inherit"
+              src="./assets/images/ring-3.png"
+              alt="Product-1"
+            />
+          </div>
+          <div class="text w-[80%] mx-[5%] text-center lg:text-start">
+            <h1
+              class="product-title text-[1.5rem] lg:text-[2rem] xl:text-[3rem] my-5"
+            >
+              Gold Woven Chain Bracelet in Black
+            </h1>
+            <p class="product-description my-5 text-[0.9rem]">
+              This bracelet features a 5MM Stainless Steel chain with Nylon cord
+              braiding. Each bracelet includes a polishing pad and a cotton
+              jewelry pouch. Proudly made by hand in Atlanta, GA.
+            </p>
+            <h4 class="text-[1.3rem]">Size</h4>
+            <div
+              class="size-buttons my-3 flex justify-around lg:justify-between items-center"
+            >
+              <div class="buttons">
+                <button
+                  class="px-2 md:px-4 py-[0.3rem] md:py-1 hover:bg-black hover:text-white border border-black bg-black text-white uppercase"
+                >
+                  s
+                </button>
+                <button
+                  class="px-2 md:px-4 py-[0.3rem] md:py-1 hover:bg-black hover:text-white border border-black uppercase"
+                >
+                  m
+                </button>
+                <button
+                  class="px-2 md:px-4 py-[0.3rem] md:py-1 hover:bg-black hover:text-white border border-black uppercase"
+                >
+                  l
+                </button>
+              </div>
+              <h3 class="text-[1.7rem]">$554,4</h3>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="product flex flex-col-reverse lg:flex-row items-center justify-between pt-[10vh]"
+        >
+          <div class="text w-[80%] mx-[5%] text-center lg:text-start">
+            <h1
+              class="product-title text-[1.5rem] lg:text-[2rem] xl:text-[3rem] my-5"
+            >
+              Gold Black Coral Ring
+            </h1>
+            <p class="product-description my-5 text-[0.9rem]">
+              A 14K yellow gold ring Two Hawaiian Black Coral inlaid strips,
+              14.5x2mm Ring sizes 4-8 Contact us for additional ring sizes To
+              our valued International Customers, an extra CITES charge will be
+              added to your order.
+            </p>
+            <h4 class="text-[1.3rem]">Size</h4>
+            <div
+              class="size-buttons my-3 flex justify-around lg:justify-between items-center"
+            >
+              <div class="buttons">
+                <button
+                  class="px-2 md:px-4 py-[0.3rem] md:py-1 hover:bg-black hover:text-white border border-black bg-black text-white uppercase"
+                >
+                  s
+                </button>
+                <button
+                  class="px-2 md:px-4 py-[0.3rem] md:py-1 hover:bg-black hover:text-white border border-black uppercase"
+                >
+                  m
+                </button>
+                <button
+                  class="px-2 md:px-4 py-[0.3rem] md:py-1 hover:bg-black hover:text-white border border-black uppercase"
+                >
+                  l
+                </button>
+              </div>
+              <h3 class="text-[1.7rem]">$320,2</h3>
+            </div>
+          </div>
+          <div class="image w-[80%] mx-[5%]">
+            <img
+              class="bg-inherit"
+              src="./assets/images/ring-4.png"
+              alt="Product-1"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- /Products -->
+    </div>
 
     <!-- Tailwind -->
     <script src="./assets/tailwind/tailwind.js"></script>

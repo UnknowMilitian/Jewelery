@@ -1,5 +1,58 @@
+:root {
+  /* Colors */
+  --main: #f8f3e9;
+  --text-color: #2c2a2b;
+  --text-light: #3d3d3f;
+  --text-gray: #8e8e8e;
+  /* /Colors */
+
+  /* Text Sizes */
+  --big-text: 5.5rem
+  --title-text: 3rem;
+  --subtitle-text: 2.2rem;
+  --description-text: 1.25rem;
+  /* /Text Sizes */
+
+  /* Text Weights */
+  --big-weight: 600
+  /* /Text Weights */
+}
+
+
+@font-face {
+  font-family: "PlayDisplay";
+  src: url(../fonts/PlayfairDisplay-Regular.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BeeZee";
+  src: url(../fonts/ABeeZee-Regular.ttf);
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "PlayDisplay";
+}
+
+h6, p {
+  color: var(--text-light);
+  font-family: "BeeZee";
+}
+
+li {
+  font-family: "BeeZee";
+}
+
+img {
+  mix-blend-mode: multiply;
 }
