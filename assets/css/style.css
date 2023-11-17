@@ -5,19 +5,7 @@
   --text-light: #3d3d3f;
   --text-gray: #8e8e8e;
   /* /Colors */
-
-  /* Text Sizes */
-  --big-text: 5.5rem
-  --title-text: 3rem;
-  --subtitle-text: 2.2rem;
-  --description-text: 1.25rem;
-  /* /Text Sizes */
-
-  /* Text Weights */
-  --big-weight: 600
-  /* /Text Weights */
 }
-
 
 @font-face {
   font-family: "PlayDisplay";
@@ -44,7 +32,8 @@ h3 {
   font-family: "PlayDisplay";
 }
 
-h6, p {
+h6,
+p {
   color: var(--text-light);
   font-family: "BeeZee";
 }
@@ -55,4 +44,54 @@ li {
 
 img {
   mix-blend-mode: multiply;
+}
+
+.splide__slide .img_box img {
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1023px) {
+  .product__title-text {
+    font-size: 2rem;
+  }
+
+  .aboutus__title-text {
+    font-size: 2rem;
+  }
+
+  .benefits__title-text {
+    font-size: 3rem;
+    margin: 1.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 1022px) {
+  .product__title-text {
+    font-size: 1.5rem;
+  }
+
+  .aboutus__title-text {
+    font-size: 1.8rem;
+  }
+
+  .benefits__title-text {
+    font-size: 3rem;
+    margin: 1.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .product__title-text {
+    font-size: 1.5rem;
+  }
+
+  .aboutus__title-text {
+    font-size: 2.2rem;
+  }
+
+  .benefits__title-text {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
 }

@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Css Links -->
 
+    <!-- Splide -->
+    <link rel="stylesheet" href="./assets/splide/splide.min.css" />
+    <!-- /Splide -->
+
     <title>Jewelery - Front-end Project</title>
   </head>
   <body class="bg-[#f8f3e9]">
@@ -59,9 +63,7 @@
             />
           </div>
           <div class="text w-[80%] mx-[5%] text-center lg:text-start">
-            <h1
-              class="product-title text-[1.5rem] lg:text-[2rem] xl:text-[3rem] my-5"
-            >
+            <h1 class="product-title product__title-text my-5">
               Gold Woven Chain Bracelet in Black
             </h1>
             <p class="product-description my-5 text-[0.9rem]">
@@ -99,9 +101,7 @@
           class="product flex flex-col-reverse lg:flex-row items-center justify-between pt-[10vh]"
         >
           <div class="text w-[80%] mx-[5%] text-center lg:text-start">
-            <h1
-              class="product-title text-[1.5rem] lg:text-[2rem] xl:text-[3rem] my-5"
-            >
+            <h1 class="product-title product__title-text my-5">
               Gold Black Coral Ring
             </h1>
             <p class="product-description my-5 text-[0.9rem]">
@@ -157,7 +157,7 @@
             <img src="./assets/images/ring-1.png" alt="About ring" />
           </div>
           <div class="text text-center lg:text-start w-[100%] lg:w-[35%]">
-            <h1 class="text-bold text-[2.2rem] my-2">Our Story</h1>
+            <h1 class="aboutus__title-text my-5">Our Story</h1>
             <p class="my-2">
               Modern jewelry is made of gold, silver, or platinum, often with
               precious or semiprecious stones, it evolved from shells, animal
@@ -171,7 +171,7 @@
           class="main-about flex flex-col-reverse lg:flex-row lg:justify-around items-center my-[3rem] lg:my-0"
         >
           <div class="text w-[100%] lg:w-[50%] text-center lg:text-start">
-            <h1 class="text-[2rem] lg:text-[5rem] lg:text-start">
+            <h1 class="aboutus__title-text lg:text-start">
               Jewelery tells a great story
             </h1>
             <div class="matal flex justify-between items-center my-[4rem]">
@@ -187,7 +187,7 @@
               </div>
             </div>
           </div>
-          <div class="image w-[65%] lg:w-[35%]">
+          <div class="image w-[65%] lg:w-[30%] my-5 lg:my-0">
             <img src="./assets/images/ring-2.png" alt="About ring" />
           </div>
         </div>
@@ -203,9 +203,7 @@
             <div
               class="text w-[85%] text-center lg:text-start lg:w-[40%] margin-0"
             >
-              <h1 class="text-[2rem] lg:text-[3rem] my-[1rem] lg:my-[1.5rem]">
-                Comfort
-              </h1>
+              <h1 class="benefits__title-text">Comfort</h1>
               <p>
                 We will reach out to you for the current cost of this permit.
                 Please contact us for more information. Maui Divers Jewelry
@@ -221,9 +219,7 @@
             class="gold flex flex-col-reverse lg:flex-row justify-center items-center lg:space-x-[5rem] my-[5rem] lg:my-[3rem]"
           >
             <div class="text w-[85%] text-center lg:text-start lg:w-[40%]">
-              <h1 class="text-[2rem] lg:text-[3rem] my-[1rem] lg:my-[1.5rem]">
-                100% Gold
-              </h1>
+              <h1 class="benefits__title-text">100% Gold</h1>
               <p>
                 We will reach out to you for the current cost of this permit.
                 Please contact us for more information. Maui Divers Jewelry
@@ -245,9 +241,7 @@
               <img src="./assets/images/about-ring-3.png" alt="" />
             </div>
             <div class="text w-[85%] text-center lg:text-start lg:w-[40%]">
-              <h1 class="text-[2rem] lg:text-[3rem] my-[1rem] lg:my-[1.5rem]">
-                Trendy
-              </h1>
+              <h1 class="benefits__title-text">Trendy</h1>
               <p>
                 A collection of hammered gold discs swing from the top and
                 bottom of a shimmery gold hoop, creating a noisy fringe. Earring
@@ -262,11 +256,147 @@
         <!-- /Benefits Section -->
       </div>
       <!-- /About Us -->
+
+      <!-- Brands -->
+      <div class="brands my-[20vh]">
+        <h1
+          class="text-center my-[4rem] text-[2rem] lg:text-[2.2rem] tracking-wider"
+        >
+          Trusted by leading companies
+        </h1>
+        <div class="splide mx-[2rem]">
+          <div class="splide__track">
+            <div class="splide__list flex items-center">
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img src="./assets/images/brand-1.svg" alt="" />
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img src="./assets/images/brand-2.svg" alt="" />
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img src="./assets/images/brand-3.svg" alt="" />
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img src="./assets/images/brand-4.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Brands -->
+
+      <!-- Blogs -->
+      <div class="blogs mt-[20vh]">
+        <h1
+          class="text-center my-[2rem] text-[2rem] lg:text-[2.2rem] font-[600] tracking-wider capitalize"
+        >
+          Our Blogs
+        </h1>
+
+        <div
+          class="blogs__content flex flex-col md:flex-row justify-between items-center mx-[1rem] md:mx-[5rem]"
+        >
+          <div class="blog w-[100%] mx-auto my-[1.2rem] md:my-[0rem] p-5 cursor-pointer">
+            <div class="blog-image">
+              <img
+                src="./assets/images/card-ring-1.png"
+                class="w-[100%]"
+                alt="Blog-1"
+              />
+            </div>
+            <div class="blog-text">
+              <div class="blog-text__title my-2 font-[600] text-[1.5rem]">
+                For Beauty
+              </div>
+              <div class="blog-text__description my-2">
+                Offending belonging promotion provision an be oh consulted
+                ourselves it.
+              </div>
+            </div>
+          </div>
+
+          <div class="blog w-[100%] mx-auto my-[1.2rem] md:my-[0rem] p-5 cursor-pointer">
+            <div class="blog-image">
+              <img
+                src="./assets/images/card-ring-2.png"
+                class="w-[100%]"
+                alt="Blog-2"
+              />
+            </div>
+            <div class="blog-text">
+              <div class="blog-text__title my-2 font-[600] text-[1.5rem]">
+                Product Quality
+              </div>
+              <div class="blog-text__description my-2">
+                Blessing welcomed ladyship she met humoured sir breeding her.
+                Six curiosity day necessary.
+              </div>
+            </div>
+          </div>
+
+          <div class="blog w-[100%] mx-auto my-[1.2rem] md:my-[0rem] p-5 cursor-pointer">
+            <div class="blog-image">
+              <img
+                src="./assets/images/card-ring-3.png"
+                class="w-[100%]"
+                alt="Blog-3"
+              />
+            </div>
+            <div class="blog-text">
+              <div class="blog-text__title my-2 font-[600] text-[1.5rem]">
+                For Comfort
+              </div>
+              <div class="blog-text__description my-2">
+                Warmly little before cousin sussex entire men set. Blessing it
+                ladyship on sensible judgment.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Blogs -->
+
+      <!-- Join us -->
+      <div class="join-us my-[10vh]">
+        <h1
+          class="text-center my-[2rem] md:my-[4rem] text-[2rem] lg:text-[2.2rem] font-[600] tracking-wider"
+        >
+          Join J-Shop's Family
+        </h1>
+        <div class="join-us__inputs w-[100%] md:w-[75%] lg:w-[50%] mx-auto">
+          <form class="flex w-[100%] space-x-[0rem] md:space-x-[1.5rem]">
+            <input
+              type="text"
+              class="w-[100%] px-5 focus:outline-none"
+              placeholder="Enter your Email"
+              required
+            />
+            <input
+              type="submit"
+              class="py-2 px-4 md:py-3 md:px-5 bg-black text-white uppercase cursor-pointer"
+              value="Join Family"
+            />
+          </form>
+        </div>
+      </div>
+      <!-- /Join us -->
     </div>
 
     <!-- Tailwind -->
     <script src="./assets/tailwind/tailwind.js"></script>
     <!-- /Tailwind -->
+
+    <!-- Splide Js -->
+    <script src="./assets/splide/splide.min.js"></script>
+    <!-- /Splide Js -->
 
     <!-- Js Links -->
     <script src="./assets/js/main.js"></script>
