@@ -1,3 +1,19 @@
+// Navbar
+let navbarBar = document.querySelector(".bar");
+let mobileNavbar = document.querySelector(".mobile-navbar");
+let mobileLi = document.querySelectorAll(".navbar-mobile-link");
+
+navbarBar.addEventListener("click", () => {
+  mobileNavbar.classList.toggle("show");
+});
+
+mobileLi.forEach((element) => {
+  element.addEventListener("click", () => {
+    mobileNavbar.classList.remove("show");
+  });
+});
+// /Navbar
+
 // Splide
 let splide = new Splide(".splide", {
   type: "loop",

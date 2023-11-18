@@ -1,6 +1,6 @@
 :root {
   /* Colors */
-  --main: #f8f3e9;
+  --main: #fbf2e0;
   --text-color: #2c2a2b;
   --text-light: #3d3d3f;
   --text-gray: #8e8e8e;
@@ -46,6 +46,26 @@ img {
   mix-blend-mode: multiply;
 }
 
+/* Mobile Navbar */
+.mobile-navbar {
+  position: absolute;
+  right: 1rem;
+  left: 1rem;
+  top: 0;
+  margin: 0 auto;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+  transition: all 0.4s ease-in-out;
+}
+
+.mobile-navbar.show {
+  top: 6rem;
+  opacity: 1;
+  visibility: visible;
+}
+/* /Mobile Navbar */
+
 .splide__slide .img_box img {
   cursor: pointer;
   margin: 0 auto;
@@ -65,7 +85,7 @@ footer li.footer-li {
   border-radius: 0.5rem;
 }
 
-.footer-buttons button svg{
+.footer-buttons button svg {
   fill: white;
   height: 1rem;
 }

@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="creted by: Umariy Jaloliddin. 17.yo intern full-stack web-developer"
-    />
 
     <!-- Css Links -->
     <link rel="stylesheet" href="./assets/css/root.css" />
@@ -26,8 +22,8 @@
         <div class="logo py-auto">
           <h1 class="font-[600] text-[1.5rem]"><a href="#">Logo</a></h1>
         </div>
-        <div class="bar block md:hidden">
-          <a href="#"
+        <div class="block md:hidden">
+          <a href="#" class="bar"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               height="1rem"
@@ -38,20 +34,36 @@
                 d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
               /></svg
           ></a>
+          <div class="mobile-navbar shadow-2xl bg-[#fbf2e0]">
+            <ul class="navbar-mobile-ul text-center">
+              <li class="navbar-mobile-link cursor-pointer my-[2rem]">
+                <a href="#products">Products</a>
+              </li>
+              <li class="navbar-mobile-link cursor-pointer my-[2rem]">
+                <a href="#about-us">About</a>
+              </li>
+              <li class="navbar-mobile-link cursor-pointer my-[2rem]">
+                <a href="#blogs">Blog</a>
+              </li>
+              <li class="navbar-mobile-link cursor-pointer my-[2rem]">
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <ul
           class="navbar-links hidden md:flex items-center justify-between space-x-10"
         >
-          <li class="navbar-link"><a href="#">Products</a></li>
-          <li class="navbar-link"><a href="#">About</a></li>
-          <li class="navbar-link"><a href="#">Contact</a></li>
-          <li class="navbar-link"><a href="#">Blog</a></li>
+          <li class="navbar-link"><a href="#products">Products</a></li>
+          <li class="navbar-link"><a href="#about-us">About</a></li>
+          <li class="navbar-link"><a href="#blogs">Blog</a></li>
+          <li class="navbar-link"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <!-- /Navbar -->
 
       <!-- Products -->
-      <div class="products mt-[8vh] lg:mt-[15vh]">
+      <div id="products" class="products mt-[8vh] lg:mt-[15vh]">
         <div
           class="product flex flex-col lg:flex-row items-center justify-between"
         >
@@ -77,17 +89,17 @@
             >
               <div class="buttons">
                 <button
-                  class="px-2 md:px-4 py-[0.3rem] md:py-1 hover:bg-black hover:text-white border border-black bg-black text-white uppercase"
+                  class="px-2 md:px-4 py-[0.3rem] md:py-1 ease-in duration-150 hover:bg-black hover:text-white border border-black bg-black text-white uppercase"
                 >
                   s
                 </button>
                 <button
-                  class="px-2 md:px-4 py-[0.3rem] md:py-1 hover:bg-black hover:text-white border border-black uppercase"
+                  class="px-2 md:px-4 py-[0.3rem] md:py-1 ease-in duration-150 hover:bg-black hover:text-white border border-black uppercase"
                 >
                   m
                 </button>
                 <button
-                  class="px-2 md:px-4 py-[0.3rem] md:py-1 hover:bg-black hover:text-white border border-black uppercase"
+                  class="px-2 md:px-4 py-[0.3rem] md:py-1 ease-in duration-150 hover:bg-black hover:text-white border border-black uppercase"
                 >
                   l
                 </button>
@@ -116,17 +128,17 @@
             >
               <div class="buttons">
                 <button
-                  class="px-2 md:px-4 py-[0.3rem] md:py-1 hover:bg-black hover:text-white border border-black bg-black text-white uppercase"
+                  class="px-2 md:px-4 py-[0.3rem] md:py-1 ease-in duration-150 hover:bg-black hover:text-white border border-black bg-black text-white uppercase"
                 >
                   s
                 </button>
                 <button
-                  class="px-2 md:px-4 py-[0.3rem] md:py-1 hover:bg-black hover:text-white border border-black uppercase"
+                  class="px-2 md:px-4 py-[0.3rem] md:py-1 ease-in duration-150 hover:bg-black hover:text-white border border-black uppercase"
                 >
                   m
                 </button>
                 <button
-                  class="px-2 md:px-4 py-[0.3rem] md:py-1 hover:bg-black hover:text-white border border-black uppercase"
+                  class="px-2 md:px-4 py-[0.3rem] md:py-1 ease-in duration-150 hover:bg-black hover:text-white border border-black uppercase"
                 >
                   l
                 </button>
@@ -146,7 +158,7 @@
       <!-- /Products -->
 
       <!-- About Us -->
-      <div class="about-us my-[15vh] lg:my-[0vh]">
+      <div id="about-us" class="about-us my-[15vh] lg:my-[0vh]">
         <h1 class="text-center my-[2rem] text-[3rem] font-[700] tracking-wider">
           About Us
         </h1>
@@ -258,7 +270,7 @@
       <!-- /About Us -->
 
       <!-- Brands -->
-      <div class="brands my-[20vh]">
+      <div id="brands" class="brands my-[20vh]">
         <h1
           class="text-center my-[4rem] text-[2rem] lg:text-[2.2rem] tracking-wider"
         >
@@ -294,7 +306,7 @@
       <!-- /Brands -->
 
       <!-- Blogs -->
-      <div class="blogs mt-[20vh]">
+      <div id="blogs" class="blogs mt-[20vh]">
         <h1
           class="text-center my-[2rem] text-[2rem] lg:text-[2.2rem] font-[600] tracking-wider capitalize"
         >
@@ -371,7 +383,7 @@
       <!-- /Blogs -->
 
       <!-- Join us -->
-      <div class="join-us my-[15vh]">
+      <div id="contact" class="join-us my-[15vh]">
         <h1
           class="text-center my-[2rem] md:my-[4rem] text-[2rem] lg:text-[2.2rem] font-[600] tracking-wider"
         >
