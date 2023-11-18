@@ -51,6 +51,25 @@ img {
   margin: 0 auto;
 }
 
+footer li.footer-li {
+  color: var(--text-light);
+}
+
+.footer-buttons {
+  margin: 2rem 0;
+}
+
+.footer-buttons button {
+  background-color: black;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.footer-buttons button svg{
+  fill: white;
+  height: 1rem;
+}
+
 @media only screen and (min-width: 1023px) {
   .product__title-text {
     font-size: 2rem;
