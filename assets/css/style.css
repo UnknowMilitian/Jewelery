@@ -1,49 +1,41 @@
+/* Colors */
 :root {
-  /* Colors */
   --main: #fbf2e0;
   --text-color: #2c2a2b;
   --text-light: #3d3d3f;
   --text-gray: #8e8e8e;
-  /* /Colors */
 }
+/* /Colors */
 
+/* Fonts */
 @font-face {
   font-family: "PlayDisplay";
   src: url(../fonts/PlayfairDisplay-Regular.ttf);
   font-display: swap;
 }
-
 @font-face {
   font-family: "BeeZee";
   src: url(../fonts/ABeeZee-Regular.ttf);
   font-display: swap;
 }
 
+/* Reset & General Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 h1,
 h2,
 h3 {
   font-family: "PlayDisplay";
 }
-
 h6,
-p {
+p,
+li {
   color: var(--text-light);
   font-family: "BeeZee";
-}
-
-li {
-  font-family: "BeeZee";
-}
-
-img {
-  mix-blend-mode: multiply;
 }
 
 /* Mobile Navbar */
@@ -58,7 +50,6 @@ img {
   z-index: 10;
   transition: all 0.4s ease-in-out;
 }
-
 .mobile-navbar.show {
   top: 6rem;
   opacity: 1;
@@ -66,71 +57,89 @@ img {
 }
 /* /Mobile Navbar */
 
+/* Buttons & Prices */
+.buttons button {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid black;
+  color: black;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.buttons button:hover,
+.buttons button.active,
+.buttons button.default {
+  color: white;
+  background-color: black;
+}
+.prices h3 {
+  display: none;
+}
+.prices h3.active,
+.prices h3.default {
+  display: block;
+}
+
+img {
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+
+/* Miscellaneous */
 .splide__slide .img_box img {
   cursor: pointer;
   margin: 0 auto;
 }
-
 footer li.footer-li {
   color: var(--text-light);
 }
-
 .footer-buttons {
   margin: 2rem 0;
 }
-
 .footer-buttons button {
   background-color: black;
   padding: 0.7rem 1rem;
   border-radius: 0.5rem;
 }
-
 .footer-buttons button svg {
   fill: white;
   height: 1rem;
 }
 
+/* Media Queries */
 @media only screen and (min-width: 1023px) {
-  .product__title-text {
-    font-size: 2rem;
-  }
-
+  .product__title-text,
   .aboutus__title-text {
     font-size: 2rem;
   }
-
   .benefits__title-text {
     font-size: 3rem;
     margin: 1.5rem 0;
   }
 }
-
 @media only screen and (max-width: 1022px) {
   .product__title-text {
     font-size: 1.5rem;
   }
-
   .aboutus__title-text {
     font-size: 1.8rem;
   }
-
   .benefits__title-text {
     font-size: 3rem;
     margin: 1.5rem 0;
   }
 }
-
 @media only screen and (max-width: 900px) {
   .product__title-text {
     font-size: 1.5rem;
   }
-
   .aboutus__title-text {
     font-size: 2.2rem;
   }
-
   .benefits__title-text {
     font-size: 2rem;
     margin: 1rem 0;
+  }
+  .buttons button {
+    padding: 0.5rem 1rem;
   }
 }

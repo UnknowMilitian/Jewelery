@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Css Links -->
-    <link rel="stylesheet" href="./assets/css/root.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/root.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
     <!-- Css Links -->
 
     <!-- Splide -->
@@ -18,22 +19,24 @@
   <body class="bg-[#f8f3e9]">
     <div class="container mx-auto px-[1rem] md:px-[4rem] py-[2rem]">
       <!-- Navbar -->
-      <nav class="flex items-center justify-between">
+      <nav
+        class="flex items-center justify-between element-animation element-animation-opacity"
+      >
         <div class="logo py-auto">
-          <h1 class="font-[600] text-[1.5rem]"><a href="#">Logo</a></h1>
+          <h1 class="font-[600] text-[1.5rem]"><a href="#">Young Pro</a></h1>
         </div>
         <div class="block md:hidden">
-          <a href="#" class="bar"
-            ><svg
+          <a href="#" class="bar">
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1rem"
               viewBox="0 0 512 512"
             >
-              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
               <path
                 d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-              /></svg
-          ></a>
+              />
+            </svg>
+          </a>
           <div class="mobile-navbar shadow-2xl bg-[#fbf2e0]">
             <ul class="navbar-mobile-ul text-center">
               <li class="navbar-mobile-link cursor-pointer my-[2rem]">
@@ -64,8 +67,9 @@
 
       <!-- Products -->
       <div id="products" class="products mt-[8vh] lg:mt-[15vh]">
+        <!-- Product 1: Gold Woven Chain Bracelet -->
         <div
-          class="product flex flex-col lg:flex-row items-center justify-between"
+          class="product flex flex-col lg:flex-row items-center justify-between element-animation element-animation-opacity"
         >
           <div class="image w-[80%] mx-[5%]">
             <img
@@ -88,29 +92,25 @@
               class="size-buttons my-3 flex justify-around lg:justify-between items-center"
             >
               <div class="buttons">
-                <button
-                  class="px-2 md:px-4 py-[0.3rem] md:py-1 ease-in duration-150 hover:bg-black hover:text-white border border-black bg-black text-white uppercase"
-                >
-                  s
-                </button>
-                <button
-                  class="px-2 md:px-4 py-[0.3rem] md:py-1 ease-in duration-150 hover:bg-black hover:text-white border border-black uppercase"
-                >
-                  m
-                </button>
-                <button
-                  class="px-2 md:px-4 py-[0.3rem] md:py-1 ease-in duration-150 hover:bg-black hover:text-white border border-black uppercase"
-                >
-                  l
-                </button>
+                <button class="filter-btn active" data-size="small">s</button>
+                <button class="filter-btn" data-size="medium">m</button>
+                <button class="filter-btn" data-size="large">l</button>
               </div>
-              <h3 class="text-[1.7rem]">$554,4</h3>
+              <div class="prices">
+                <h3 class="price text-[1.7rem] default" data-size="default">
+                  $224,6
+                </h3>
+                <h3 class="price text-[1.7rem]" data-size="small">$224,6</h3>
+                <h3 class="price text-[1.7rem]" data-size="medium">$354,4</h3>
+                <h3 class="price text-[1.7rem]" data-size="large">$554,9</h3>
+              </div>
             </div>
           </div>
         </div>
 
+        <!-- Product 2: Gold Black Coral Ring -->
         <div
-          class="product flex flex-col-reverse lg:flex-row items-center justify-between pt-[10vh]"
+          class="product flex flex-col-reverse lg:flex-row items-center justify-between pt-[10vh] element-animation element-animation-opacity"
         >
           <div class="text w-[80%] mx-[5%] text-center lg:text-start">
             <h1 class="product-title product__title-text my-5">
@@ -127,23 +127,18 @@
               class="size-buttons my-3 flex justify-around lg:justify-between items-center"
             >
               <div class="buttons">
-                <button
-                  class="px-2 md:px-4 py-[0.3rem] md:py-1 ease-in duration-150 hover:bg-black hover:text-white border border-black bg-black text-white uppercase"
-                >
-                  s
-                </button>
-                <button
-                  class="px-2 md:px-4 py-[0.3rem] md:py-1 ease-in duration-150 hover:bg-black hover:text-white border border-black uppercase"
-                >
-                  m
-                </button>
-                <button
-                  class="px-2 md:px-4 py-[0.3rem] md:py-1 ease-in duration-150 hover:bg-black hover:text-white border border-black uppercase"
-                >
-                  l
-                </button>
+                <button class="filter-btn active" data-size="small">s</button>
+                <button class="filter-btn" data-size="medium">m</button>
+                <button class="filter-btn" data-size="large">l</button>
               </div>
-              <h3 class="text-[1.7rem]">$320,2</h3>
+              <div class="prices">
+                <h3 class="price default text-[1.7rem]" data-size="default">
+                  $120,3
+                </h3>
+                <h3 class="price text-[1.7rem]" data-size="small">$120,3</h3>
+                <h3 class="price text-[1.7rem]" data-size="medium">$245,2</h3>
+                <h3 class="price text-[1.7rem]" data-size="large">$320,7</h3>
+              </div>
             </div>
           </div>
           <div class="image w-[80%] mx-[5%]">
@@ -159,11 +154,14 @@
 
       <!-- About Us -->
       <div id="about-us" class="about-us my-[15vh] lg:my-[0vh]">
-        <h1 class="text-center my-[2rem] text-[3rem] font-[700] tracking-wider">
+        <h1
+          class="text-center my-[2rem] text-[3rem] font-[700] tracking-wider element-animation element-animation-top"
+        >
           About Us
         </h1>
+
         <div
-          class="story flex flex-col lg:flex-row items-center justify-around space-x-5"
+          class="story flex flex-col lg:flex-row items-center justify-around space-x-5 element-animation element-animation-top"
         >
           <div class="image w-[65%] lg:w-[40%]">
             <img src="./assets/images/ring-1.png" alt="About ring" />
@@ -171,31 +169,32 @@
           <div class="text text-center lg:text-start w-[100%] lg:w-[35%]">
             <h1 class="aboutus__title-text my-5">Our Story</h1>
             <p class="my-2">
-              Modern jewelry is made of gold, silver, or platinum, often with
-              precious or semiprecious stones, it evolved from shells, animal
-              teeth, and other items used as body decoration in prehistoric
-              times.
+              Modern jewelry, evolving from shells and animal teeth, now
+              consists of gold, silver, or platinum with precious or
+              semiprecious stones.
             </p>
           </div>
         </div>
 
         <div
-          class="main-about flex flex-col-reverse lg:flex-row lg:justify-around items-center my-[3rem] lg:my-0"
+          class="main-about flex flex-col-reverse lg:flex-row lg:justify-around items-center my-[3rem] lg:my-0 element-animation element-animation-top"
         >
           <div class="text w-[100%] lg:w-[50%] text-center lg:text-start">
             <h1 class="aboutus__title-text lg:text-start">
-              Jewelery tells a great story
+              Jewelry tells a great story
             </h1>
             <div class="matal flex justify-between items-center my-[4rem]">
               <div class="gold">
                 <h1 class="text-[1.25rem] font-[600] capitalize my-1">Gold</h1>
-                <p class="">Her provision acuteness had two why intention.</p>
+                <p class="">Gold symbolizes acuteness, precision, and value.</p>
               </div>
               <div class="siver">
                 <h1 class="text-[1.25rem] font-[600] capitalize my-1">
                   Silver
                 </h1>
-                <p class="">Her provision acuteness had two why intention.</p>
+                <p class="">
+                  Silver embodies purity and reflects inner calmness.
+                </p>
               </div>
             </div>
           </div>
@@ -206,8 +205,9 @@
 
         <!-- Benefits Section -->
         <div class="benefits my-[0vh] lg:my-[7vh]">
+          <!-- Comfort -->
           <div
-            class="comfort flex flex-col lg:flex-row justify-center items-center lg:space-x-[5rem] my-[5rem] lg:my-[3rem]"
+            class="comfort flex flex-col lg:flex-row justify-center items-center lg:space-x-[5rem] my-[5rem] lg:my-[3rem] element-animation element-animation-opacity"
           >
             <div class="image w-[90%] lg:w-[30%] height-[200px]">
               <img src="./assets/images/about-ring-1.png" alt="" />
@@ -227,18 +227,19 @@
             </div>
           </div>
 
+          <!-- 100% Gold -->
           <div
-            class="gold flex flex-col-reverse lg:flex-row justify-center items-center lg:space-x-[5rem] my-[5rem] lg:my-[3rem]"
+            class="gold flex flex-col-reverse lg:flex-row justify-center items-center lg:space-x-[5rem] my-[5rem] lg:my-[3rem] element-animation element-animation-opacity"
           >
             <div class="text w-[85%] text-center lg:text-start lg:w-[40%]">
               <h1 class="benefits__title-text">100% Gold</h1>
               <p>
-                We will reach out to you for the current cost of this permit.
-                Please contact us for more information. Maui Divers Jewelry
-                offers extended sizing which may be subject to an additional
-                cost. Any subsequent resizes after purchase will incur an
-                additional charge. Please note some styles cannot be resized due
-                to their design.
+                Gold chains were a sign of service to the supreme beings of a
+                particular religion in the past. Nowadays, they are symbols of
+                wealth and class. Rap artists were most likely the ones who
+                brought the custom of wearing gold chains to modern men's
+                everyday life. There are a few reasons why do men wear gold
+                chains.
               </p>
             </div>
             <div class="image w-[90%] lg:w-[30%] height-[200px]">
@@ -246,8 +247,9 @@
             </div>
           </div>
 
+          <!-- Trendy -->
           <div
-            class="trendy flex flex-col lg:flex-row justify-center items-center lg:space-x-[5rem] my-[5rem] lg:my-[3rem]"
+            class="trendy flex flex-col lg:flex-row justify-center items-center lg:space-x-[5rem] my-[5rem] lg:my-[3rem] element-animation element-animation-opacity"
           >
             <div class="image w-[90%] lg:w-[30%] height-[200px]">
               <img src="./assets/images/about-ring-3.png" alt="" />
@@ -267,12 +269,16 @@
         </div>
         <!-- /Benefits Section -->
       </div>
+
       <!-- /About Us -->
 
       <!-- Brands -->
-      <div id="brands" class="brands my-[20vh]">
+      <div
+        id="brands"
+        class="brands my-[20vh] element-animation element-animation-top"
+      >
         <h1
-          class="text-center my-[4rem] text-[2rem] lg:text-[2.2rem] tracking-wider"
+          class="text-center my-[4rem] text-[2rem] lg:text-[2.2rem] tracking-wider element-animation"
         >
           Trusted by leading companies
         </h1>
@@ -303,12 +309,13 @@
           </div>
         </div>
       </div>
+
       <!-- /Brands -->
 
       <!-- Blogs -->
       <div id="blogs" class="blogs mt-[20vh]">
         <h1
-          class="text-center my-[2rem] text-[2rem] lg:text-[2.2rem] font-[600] tracking-wider capitalize"
+          class="text-center my-[2rem] text-[2rem] lg:text-[2.2rem] font-[600] tracking-wider capitalize element-animation element-animation-opacity"
         >
           Our Blogs
         </h1>
@@ -316,8 +323,9 @@
         <div
           class="blogs__content flex flex-wrap justify-between items-center md:mx-[2rem]"
         >
+          <!-- Blog 1 -->
           <div
-            class="blog w-[100%] md:w-[50%] lg:w-[33%] mx-auto my-[1.2rem] md:my-[0rem] p-5 cursor-pointer"
+            class="blog w-[100%] md:w-[50%] lg:w-[33%] mx-auto my-[1.2rem] md:my-[0rem] p-5 cursor-pointer element-animation element-animation-top"
           >
             <div class="blog-image">
               <img
@@ -337,8 +345,9 @@
             </div>
           </div>
 
+          <!-- Blog 2 -->
           <div
-            class="blog w-[100%] md:w-[50%] lg:w-[33%] mx-auto my-[1.2rem] md:my-[0rem] p-5 cursor-pointer"
+            class="blog w-[100%] md:w-[50%] lg:w-[33%] mx-auto my-[1.2rem] md:my-[0rem] p-5 cursor-pointer element-animation element-animation-top"
           >
             <div class="blog-image">
               <img
@@ -358,8 +367,9 @@
             </div>
           </div>
 
+          <!-- Blog 3 -->
           <div
-            class="blog w-[100%] md:w-[50%] lg:w-[33%] mx-auto my-[1.2rem] md:my-[0rem] p-5 cursor-pointer"
+            class="blog w-[100%] md:w-[50%] lg:w-[33%] mx-auto my-[1.2rem] md:my-[0rem] p-5 cursor-pointer element-animation element-animation-top"
           >
             <div class="blog-image">
               <img
@@ -380,17 +390,20 @@
           </div>
         </div>
       </div>
+
       <!-- /Blogs -->
 
       <!-- Join us -->
       <div id="contact" class="join-us my-[15vh]">
         <h1
-          class="text-center my-[2rem] md:my-[4rem] text-[2rem] lg:text-[2.2rem] font-[600] tracking-wider"
+          class="text-center my-[2rem] md:my-[4rem] text-[2rem] lg:text-[2.2rem] font-[600] tracking-wider element-animation element-animation-top"
         >
           Join J-Shop's Family
         </h1>
         <div class="join-us__inputs w-[100%] md:w-[75%] lg:w-[50%] mx-auto">
-          <form class="flex w-[100%] space-x-[0rem] md:space-x-[1.5rem]">
+          <form
+            class="flex w-[100%] space-x-[0rem] md:space-x-[1.5rem] element-animation element-animation-top"
+          >
             <input
               type="text"
               class="w-[100%] px-5 focus:outline-none"
@@ -405,11 +418,14 @@
           </form>
         </div>
       </div>
+
       <!-- /Join us -->
     </div>
 
     <!-- Footer -->
-    <footer class="footer container mx-auto px-[1rem] md:px-[8rem]">
+    <footer
+      class="footer container mx-auto px-[1rem] md:px-[8rem] element-animation element-animation-opacity"
+    >
       <nav class="flex flex-wrap justify-between capitalize">
         <ul class="footer-ul product w-[50%] lg:w-[33%] xl:w-[25%]">
           <li class="footer-li__title text-[1.5rem] my-[2rem]">Product</li>

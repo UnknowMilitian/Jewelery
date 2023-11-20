@@ -1,0 +1,30 @@
+/* Elment Animation */
+.element-animation-opacity {
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.element-animation-opacity.element-show {
+  opacity: 1;
+}
+
+/* ///// */
+
+.element-animation-top {
+  opacity: 0;
+  -webkit-transform: translateY(-1rem);
+  -ms-transform: translateY(-1rem);
+  transform: translateY(-1rem);
+  -webkit-animation: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s ease-in-out;
+}
+
+.element-animation-top.element-show {
+  opacity: 1;
+  -webkit-transform: translateY(0rem);
+  -ms-transform: translateY(0rem);
+  transform: translateY(0rem);
+}
+/* /Elment Animation */
